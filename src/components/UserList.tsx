@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { UserType } from '../App';
 
 type UserListProps = {
@@ -22,7 +24,7 @@ export const UserList = ({ users }: UserListProps) => {
           <th>Email</th>
         </tr>
       </thead>
-      <tbody>{renderUsers}</tbody>
+      <tbody data-testid='users'>{renderUsers}</tbody>
     </table>
   );
 };
